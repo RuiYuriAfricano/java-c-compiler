@@ -1,0 +1,47 @@
+_khshgdf sdfgedb9 /
+_
+9.11
+9.1
+3
+,.:){]
+khshgdf((((
+sdfgedb(((((
+rui{}[:*?
+"Malemba"
+""
+''
+'2'
+'t'll
+//
+//fnfnfnf
+//
+//////////////////////////
+a
+j
+909.009
+'\r'
+a /=
+/**************************/
+/*Autor: Rui Malemba
+Data: 12 de abril de 2023
+ISPTEC*/
+/*djjdjdjjjjjj
+**/
+a
+aaa +=
+aaa -=
+aaa *=
+aaa /=
+aaa %=
+aaa +q
+aaa -q
+aaa *q
+aaa /q
+aaa %q
+aaa >q
+#endif
+#include<ff.h>
+#include<conio.h>
+#define d 3
+#undef SQUARE
+#ifdef DEBUG

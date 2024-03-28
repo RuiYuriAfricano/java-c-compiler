@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define A 5
+/*
+Autor: Rui Malemba
+Data: 10/05/2023 
+*/
+int main(){
+	int a = 5;
+                              int A;
+	int w[3]; //Declaração do vetor W
+	char letra = 'm';
+	if(a >= A)
+	printf("Olá");
+	
+	system("pause");
+	return 0;
+}
