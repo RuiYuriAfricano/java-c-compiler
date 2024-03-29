@@ -43,3 +43,40 @@ Então esse foi o autómato que eu desenvolvi para o meu caso de estudo na ferra
 
 ![AFANALEX](https://github.com/RuiYuriAfricano/java-c-compiler/assets/95936638/0fab781e-d0aa-40ff-a561-2a2e5322bdcb)
 
+para uma melhor visibilidade, disponibilizp o ficheiro source do jflap que desenhei o automáto na pasta docs.
+
+<h3>1.3 Análise Léxica ( 1º fase de um compilador )</h3>
+
+A análise léxica também conhecida como <b>Scanner</b> é quando o compilador pega o código escrito em um ficheiro de texto faz a leitura, parte cada símbolo e armazena em uma estrutura de dados que pode ser array, list, pilha, fila... e classifica esse símbolo lido ou conjunto de símbolos lidos caso ele reconheça este símbolo. O reconhecimento dos símbolos do compilador é feito com base uma lista de <b>Tokens</b> que é previamente criado para classificar cada símbolo lido. <a href="https://github.com/RuiYuriAfricano/java-c-compiler/blob/main/src/entidades/Token.java"> Ver lista de token </a>
+
+Aqui tem a saída do meu compilador para um analise léxica do código:
+
+#include <stdio.h>
+#include <stdlib.h>
+#define A 5
+/*
+Autor: Rui Malemba
+Data: 10/05/2023 
+*/
+int main(){
+	int a = 5;
+	int w[3]; //Declaração do vetor W
+	char letra = 'm';
+	scanf("%d", &c);
+	if(a == A)
+		printf("Olá");
+	media(11, 23.3, 'a', c);
+	gets(letra);
+	system("pause");
+	return 0;
+}
+![Captura de Ecrã (576)](https://github.com/RuiYuriAfricano/java-c-compiler/assets/95936638/18c2b764-42f0-4d8f-8213-802c75121052)
+![Captura de Ecrã (577)](https://github.com/RuiYuriAfricano/java-c-compiler/assets/95936638/5e81c84b-9b98-4061-a661-10187306f640)
+![Captura de Ecrã (578)](https://github.com/RuiYuriAfricano/java-c-compiler/assets/95936638/8c7cf201-beb0-4254-9134-3dfd1d1290d5)
+![Captura de Ecrã (579)](https://github.com/RuiYuriAfricano/java-c-compiler/assets/95936638/741038d9-b502-4cb6-854b-33a5edef8c19)
+![Captura de Ecrã (580)](https://github.com/RuiYuriAfricano/java-c-compiler/assets/95936638/38a7094b-4ab4-40e9-89de-c03a066a960d)
+
+
+
+
+
