@@ -108,4 +108,22 @@ Ex.:
 
 ![Captura de Ecrã (582)](https://github.com/RuiYuriAfricano/java-c-compiler/assets/95936638/1be0490e-d909-4f91-9dfa-c897aa4e7ecd)
 
+<h3>1.6 Outras fases</h3>
 
+Existem ainda outras fases para a conclusão do trabalho de compilador que não foram abordadas nesse trabalho <b>Geração de código intermediário e Otimização de código</b> Não são fazes menos importante mas elas podem ser feitas com ajuda de programas já prontos e existentes no mercado. <a href = "https://pt.wikipedia.org/wiki/Compilador">Ler mais em</a>.
+
+# Instruções para rodar o projeto
+
+	1. Baixar o projeto git clone
+	2. Fazer instalação do Java no VSCode
+	3. Ou Fazer a instalação do NetBeans
+	4. Abrir o Projecto e Clicar Play, Pode fazer o download do projeto e rodar no apache netbeans, sem mistérios.
+<b>OBS:</b> O código pode ser inserido no ficheiro input.txt no diretório raiz.
+
+# Considerações Finais
+
+Este foi um trabalho que amei enquanto estudante da cadeira de compiladores no <a href = "https://www.isptec.co.ao/">ISPTEC</a> decidi colocar ele público para que as pessoas que queiram estudar compiladores ou que terão essa cadeira no 3 Ano do Curso de Engenharia Informática, que lhes sirva de apoio para que possam aprender e melhorar muito suas habilidades programação e no entendimento de como funcionam os compiladores!
+
+Obrigado!
+
+by: Rui Malemba
