@@ -1,0 +1,29 @@
+ <Program> ::= <Decl_List>
+ <Decl_List> ::= <Decl_List> <Decl> | <Decl>
+ <Decl> ::= <Var_Decl> | <Fun_Decl>
+ <Var_Decl> ::= <Type_Spec> ID “;” | <Type_Spec> ID “[” “]” “;”
+ <Type_Spec> ::= “void” | “float” | “char” | “int” | “double”
+ <Fun_Decl> ::= <Type_Spec> ID “(” <Paramas> “)” <Com_Stmt>
+ <Paramas> ::= <Param_List> | “void”
+ <Param_List> ::= <Param_List> “,” <Param> | <Param>
+ <Param> ::= <Type_Spec> ID | <Type_Spec> ID “[” “]”
+ <Stmt_List> ::= <Stmt_List> <Stmt> | vazio
+MANUAL DO PROGRAMADOR - COMPILADORES, ISPTEC 2022-23 10
+ <Stmt> ::= <Exp_Stmt>|<Com_Stmt>|<If_Stmt>|<While_Stmt> |<Return_Stmt>
+|<Break_Stmt>
+ <Exp_Stmt> ::= <Exp> “;” | “;”
+ <While_Stmt> ::= “While” “(“ <Exp> “)” <Stmt>
+ <Com_Stmt> ::= “{“ <Local_Decls> <Stmt_List> “}”
+ <Local_Decls> ::= <Local_Decls> <Local_Decl> | vazio
+ <Local_Decl> ::= <Type_Spec> ID “;” | <Type_Spec> ID “[” “]” “;”
+ <If_Stmt> ::= “if” “(“ <Exp> “)” <Stmt> | “if” “(“ <Exp> “)” <Stmt> “else” <Stmt>
+ <Return_Stmt> ::= “return” “;” | “return” <Exp> “;”
+ <Exp> ::= ID “=” <Exp> | ID “[“ <Exp> “]” = <Exp> | <Exp> “||” <Exp> | <Exp>
+“=” <Exp> | <Exp> “==” <Exp> | <Exp> “<=” <Exp> | <Exp> “<” <Exp> | <Exp>
+“>=” <Exp> | <Exp> “&&” <Exp> | <Exp> “+” <Exp> | <Exp> “-” <Exp> | <Exp>
+“*” <Exp> | <Exp> “/” <Exp> | <Exp> “%” <Exp> | “!” <Exp> | “-” <Exp> | “+”
+<Exp> | “(“ <Exp> “)” | ID | ID “(“ <Args> “)” | ID “.” “size” | BOOL_LIT | INT_LIT
+| FLOAT_LIT | CHAR_LIT | “new” <Type_Spec> “[“ <Exp> “]”
+MANUAL DO PROGRAMADOR - COMPILADORES, ISPTEC 2022-23 11
+ <Arg_List> ::= <Arg_List> “,” <Exp> | <Exp>
+ <Arg> ::= <Arg_List> | vazio
