@@ -50,26 +50,27 @@ para uma melhor visibilidade, disponibilizp o ficheiro source do jflap que desen
 A análise léxica também conhecida como <b>Scanner</b> é quando o compilador pega o código escrito em um ficheiro de texto faz a leitura, parte cada símbolo e armazena em uma estrutura de dados que pode ser array, list, pilha, fila... e classifica esse símbolo lido ou conjunto de símbolos lidos caso ele reconheça este símbolo. O reconhecimento dos símbolos do compilador é feito com base uma lista de <b>Tokens</b> que é previamente criado para classificar cada símbolo lido. <a href="https://github.com/RuiYuriAfricano/java-c-compiler/blob/main/src/entidades/Token.java"> Ver lista de token </a>
 
 Aqui tem a saída do meu compilador para um analise léxica do código:
-
-#include <stdio.h><br/>
-#include <stdlib.h><br/>
-#define A 5<br/>
-/*<br/>
-Autor: Rui Malemba<br/>
-Data: 10/05/2023 <br/>
-*/<br/>
-int main(){<br/>
-	int a = 5;<br/>
-	int w[3]; //Declaração do vetor W<br/>
-	char letra = 'm';<br/>
-	scanf("%d", &c);<br/>
-	if(a == A)<br/>
-		printf("Olá");<br/>
-	media(11, 23.3, 'a', c);<br/>
-	gets(letra);<br/>
-	system("pause");<br/>
-	return 0;<br/>
-}<br/>
+```C
+#include <stdio.h>
+#include <stdlib.h>
+#define A 5
+/*
+Autor: Rui Malemba
+Data: 10/05/2023 
+*/
+int main(){
+	int a = 5;
+	int w[3]; //Declaração do vetor W
+	char letra = 'm';
+	scanf("%d", &c);
+	if(a == A)
+		printf("Olá");
+	media(11, 23.3, 'a', c);
+	gets(letra);
+	system("pause");
+	return 0;
+}
+```
 ![Captura de Ecrã (576)](https://github.com/RuiYuriAfricano/java-c-compiler/assets/95936638/18c2b764-42f0-4d8f-8213-802c75121052)
 ![Captura de Ecrã (577)](https://github.com/RuiYuriAfricano/java-c-compiler/assets/95936638/5e81c84b-9b98-4061-a661-10187306f640)
 ![Captura de Ecrã (578)](https://github.com/RuiYuriAfricano/java-c-compiler/assets/95936638/8c7cf201-beb0-4254-9134-3dfd1d1290d5)
