@@ -31,9 +31,10 @@ O Java é uma linguagem muito utilizada também para fins didático, e durante o
 
 É sabido por todos nós que uma variável obedece um conjunto de regras para ser declarada de acordo a linguagem de programação em uso, por exemplo no c não podemos ter o nome de variável iniciando com um numero int 3; Então para que as regras de declaração de variável seja cumprida utilizamos um expressão regular contendo as regras para posterior ser validada com este exemplo tem mais exemplos onde fizemos o uso da expressão regular!
 
-Váriavel: ID-> <b>[A-Za-z]|{[A-Za-z]||[0-9]}^*</b>
-Números Inteiros: <b>INT-> [0-9]^+</b>
-Números Reais: REAL-> <b>[0-9]^+.[0-9]^+</b>
+ 1. Váriavel: ID-> <b>[A-Za-z]|{[A-Za-z]||[0-9]}^*</b></b>
+ 2. Números Inteiros: <b>INT-> [0-9]^+</b></b>
+ 3. Números Reais: REAL-> <b>[0-9]^+.[0-9]^+</b></b>
+
 Ai tem alguns exemplos de expressões regulares que usamos, para validar algumas regras mais simples, tem regras complexas que não é possível fazer a representação só com expressão regular então ai onde entrou a Utilização de autómatos, bom existe 3 tipos <b>#Autómato Finito Determinístico , #Autómato Finito Não Determinístico , #Autómato Com Movimentos Vazios</b>.
 
 Para a criação do compilador o autómato a ser utlizado é o <b>#Autómato Finito Determinístico</b> Porque ele tem apenas um caminho para cada símbolo lido e ele não possui movimentos vazios! <a href="https://pt.wikipedia.org/wiki/M%C3%A1quina_de_estados_finitos_n%C3%A3o_determin%C3%ADstica">Ler mais sobre autómatos</a>.
