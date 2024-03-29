@@ -8,7 +8,6 @@
  <Param_List> ::= <Param_List> “,” <Param> | <Param>
  <Param> ::= <Type_Spec> ID | <Type_Spec> ID “[” “]”
  <Stmt_List> ::= <Stmt_List> <Stmt> | vazio
-MANUAL DO PROGRAMADOR - COMPILADORES, ISPTEC 2022-23 10
  <Stmt> ::= <Exp_Stmt>|<Com_Stmt>|<If_Stmt>|<While_Stmt> |<Return_Stmt>
 |<Break_Stmt>
  <Exp_Stmt> ::= <Exp> “;” | “;”
@@ -24,6 +23,5 @@ MANUAL DO PROGRAMADOR - COMPILADORES, ISPTEC 2022-23 10
 “*” <Exp> | <Exp> “/” <Exp> | <Exp> “%” <Exp> | “!” <Exp> | “-” <Exp> | “+”
 <Exp> | “(“ <Exp> “)” | ID | ID “(“ <Args> “)” | ID “.” “size” | BOOL_LIT | INT_LIT
 | FLOAT_LIT | CHAR_LIT | “new” <Type_Spec> “[“ <Exp> “]”
-MANUAL DO PROGRAMADOR - COMPILADORES, ISPTEC 2022-23 11
  <Arg_List> ::= <Arg_List> “,” <Exp> | <Exp>
  <Arg> ::= <Arg_List> | vazio

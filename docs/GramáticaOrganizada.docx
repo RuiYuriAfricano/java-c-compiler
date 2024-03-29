@@ -1,0 +1,54 @@
+ <Program> ::= <Decl_List>
+ <Decl_List> ::= <Decl> <Decl_List1>
+ <Decl_List1> ::= <Decl> <Decl_List1> | vazio
+ <Decl> ::= <Type_Spec> ID <Decl1>
+ <Decl1> ::= “;” | “[”<Exp> “]” “;” | “(” <Paramas> “)” <Com_Stmt0> | “=”
+<Exp_Stmt>
+ <Type_Spec> ::= “void” | “float” | “char” | “int” | “double” | “”
+ <Paramas> ::= <Param_List> | “void”
+ <Param_List> ::= <Param> <Param_List1>
+ <Param_List1> ::= “,” <Param> <Param_List1> | vazio
+ <Param> ::= <Type_Spec> ID <Param1>
+ <Param1> ::= vazio | “[” “]”
+ <Stmt_List> ::= <Stmt_List1>
+ <Stmt_List1> ::= <Stmt> <Stmt_List1> | vazio
+ <Stmt> ::= <Exp_Stmt>|<Com_Stmt>|<If_Stmt>|<While_Stmt>
+|<Do_While_Stmt> |<Return_Stmt> |<Break_Stmt> |<Printf_Stmt>
+|<Scanf_Stmt> |<For_Stmt>
+ <Exp_Stmt> ::= <Exp> “;” | “;”
+ <While_Stmt> ::= “While” “(“ <Exp> “)” <Stmt>
+ <Do_While_Stmt> ::= “do” <Stmt> “while” “(“ <Exp> “)” “;”
+ Com_Stmt0> ::= “;“ | <Com_Stmt>
+ Com_Stmt> ::= “{“ <Local_Decls> <Stmt_List> “}”
+ <For_Stmt> ::= “for” “(“ <Exp> “;” <Exp> “;” <Exp> “)” <Stmt>
+ <Break_Stmt> ::= “break” “;”
+ <Printf_Stmt> ::= “printf” “(“ Lit_String <IDS>
+ <IDS> ::= “,” ID <IDS> |”)” “;”
+ <Scanf_Stmt> ::= “Scanf” “(“ <Lit_String_Spec> <FF>
+ <FF> ::= “,” “&” ID <FF1>
+ <FF1> ::= “)” “;” | <FF>
+ <Lit_String_Spec> ::= “%d” | “%i” | “%f” | “%lf” | “&c” | “&s”
+ <Local_Decls> ::= <Local_Decls1>
+ <Local_Decls1> ::= <Local_Decl> <Local_Decls1> | vazio
+ <Local_Decl> ::= <Type_Spec> ID <Local_Decl1>
+ <Local_Decl1> ::= “;” | “[” <Exp> “]” “;” | “=” <Exp_Stmt>
+ <If_Stmt> ::= “if” “(“ <Exp> “)” <Stmt> <If_Stmt1>
+ <If_Stmt1> ::= vazio | “else” <Stmt>
+ <Return_Stmt> ::= “return” <Return_Stmt1>
+ <Return_Stmt1> ::= “;” | <Exp> “;”
+ <Arg_List> ::= <Exp> <Arg_List1>
+ <Arg_List1> ::= “,” <Exp> <Arg_List1> | vazio
+ <Arg> ::= <Arg_List> | vazio
+ <Exp> ::= ID <Exp1><Exp3> | “!” <Exp><Exp3> | “-” <Exp><Exp3> | “+”
+<Exp><Exp3> | INT_LIT<Exp3> | FLOAT_LIT<Exp3> | CHAR_LIT<Exp3> |
+double<Exp3>
+ <Exp1> :: = “[“ <Exp> “]” <Exp2> | “.” “sizeof” “(” <Exp> “)” | “(” <Args> “)” |
+vazio
+ <Exp2> ::= “=” <Exp> | vazio
+ <Exp3> ::= “||” <Exp><Exp3> | “=” <Exp><Exp3> |“==” <Exp><Exp3> |“<=”
+<Exp><Exp3> |“<” <Exp><Exp3> |“>” <Exp><Exp3> |“>=” <Exp><Exp3>
+|“&&” <Exp><Exp3> |“-” <Exp><Exp3> | “*” <Exp><Exp3> |“/” <Exp><Exp3>
+|“&” <Exp><Exp3> |“|” <Exp><Exp3> |“+=” <Exp><Exp3> |“-=” <Exp><Exp3>
+|“*=” <Exp><Exp3> |“/=” <Exp><Exp3> |“++” <Exp><Exp3> |“--”
+<Exp><Exp3> |“+” <Exp><Exp3> |“%” <Exp><Exp3> |“?” <Exp><Exp3> |“:”
+<Exp><Exp3> |vazio
