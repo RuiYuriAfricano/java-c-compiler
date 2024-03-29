@@ -40,3 +40,6 @@ Ai tem alguns exemplos de expressões regulares que usamos, para validar algumas
 Para a criação do compilador o autómato a ser utlizado é o <b>#Autómato Finito Determinístico</b> Porque ele tem apenas um caminho para cada símbolo lido e ele não possui movimentos vazios! <a href="https://pt.wikipedia.org/wiki/M%C3%A1quina_de_estados_finitos_n%C3%A3o_determin%C3%ADstica">Ler mais sobre autómatos</a>.
 
 Então esse foi o autómato que eu desenvolvi para o meu caso de estudo na ferramenta <a href="https://www.jflap.org/">JFLAP</a>:
+
+![AFANALEX](https://github.com/RuiYuriAfricano/java-c-compiler/assets/95936638/0fab781e-d0aa-40ff-a561-2a2e5322bdcb)
+
