@@ -77,6 +77,26 @@ int main(){
 ![Captura de Ecrã (579)](https://github.com/RuiYuriAfricano/java-c-compiler/assets/95936638/741038d9-b502-4cb6-854b-33a5edef8c19)
 ![Captura de Ecrã (580)](https://github.com/RuiYuriAfricano/java-c-compiler/assets/95936638/38a7094b-4ab4-40e9-89de-c03a066a960d)
 
+<h3>1.4 Analise Sintática ( 2º fase de um compilador )</h3>
+
+A analise sintática é a parte que segue depois que o compilador consegue ler os símbolos ela é responsável por validar se a escrita de um código está certa ou errada! Ela consegue fazer isso com base uma <b>Gramática Livre de Contexto<b> Tal como na língua portuguesa temos uma gramática que dita as regras também temos uma gramática em cada linguagem de programação que dita as regras de como se deve escrever o código para o meu caso de estudo eu utilizei uma gramática da <b>linguagem c desorganizada</b> que na qual eu tive de organizar para poder implementar a primeira fazer da analise sintática. <a href="https://github.com/RuiYuriAfricano/java-c-compiler/blob/main/docs/Gram%C3%A1ticaDesorganizada.docx"> Ver minha gramática desorganizada</a>.
+
+<h3>1.4.1 Gramática Livre de Contexto</h3>
+
+As gramáticas da linguagem de programação eles na sua maioria aparecem utilizando uma estrutura <b>bottom-up</b> onde a analise do código é feita de baixo para cima e a recursividade é fita da esquerda para a direita. Para o meu compilador utilizamos uma abordagem diferente que é a regra <b>top-down</b> de cima para baixo onde é preciso eliminar a recursividade a esquerda se não os ao escrever o código pode ficar em loop infinito.
+
+Nas gramáticas das linguagens de programação um símbolo pode ter vários caminhos para ajudar na representação visual ou na leitura, e muitos geradores de código eles removem essa ambiguidade porque pode gerar loop e eu também tive de resolver essas ambiguidades para poder implementar a primeira fase. <a href="https://github.com/RuiYuriAfricano/java-c-compiler/blob/main/docs/Gram%C3%A1ticaOrganizada.docx"> Ver minha gramática organizada</a>.
+
+<h3>1.4.2 Técnica de Detenção de Erro ( Modo Pânico )</h3>
+
+Um compilador ao analisar o código ele não pode para a sua analise ele deve apresentar todos os erros encontrados até ao final do código, mas se no meio da sua Analise o compilador encontrar um erro ele não pode adivinhar o que o programador queria escrever: <b>ex.: int soma {}</b>
+É sabido este código está errado pois depois do soma poderia ser uma abrir parenteses caso estejamos a declarar função ou poderia ser igual para declaramos uma variável com atribuição ou poderia ser ponto e virgula depois dessa instrução soma; no modo pânico o compilador declara erro nessa linha e como ele não pode parar ele vai a busca de um <b>token de Sincronização ( Reconciliação )</b> para ele poder continuar a sua Analise esses podem ser ( Palavra Reservada, Tipo de Dados, ; | ( | ), ID etc... ).
+
+<h3>1.4.3 Técnica de derivação ( First - Flow )</h3>
+
+No processo de detenção de erro é preciso saber se o compilador pode entrar num determinado fluxo ou não, as funções sequem um fluxo, as variáveis um outro fluxo, as expressões e operações aritmética seguem um outro fluxo então o compilador precisa saber se o símbolo lido faz parte das iniciais de qual fluxo para depois mergulhar nele. Quando não aplicado fica muito complicado saber onde mergulhar e pode ocasionar detenção de erros não existentes caso ele entre em um fluxo errado.
+
+Para o código:
 
 
 
