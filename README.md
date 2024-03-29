@@ -79,7 +79,7 @@ int main(){
 
 <h3>1.4 Analise Sintática ( 2º fase de um compilador )</h3>
 
-A analise sintática é a parte que segue depois que o compilador consegue ler os símbolos ela é responsável por validar se a escrita de um código está certa ou errada! Ela consegue fazer isso com base uma <b>Gramática Livre de Contexto<b> Tal como na língua portuguesa temos uma gramática que dita as regras também temos uma gramática em cada linguagem de programação que dita as regras de como se deve escrever o código para o meu caso de estudo eu utilizei uma gramática da <b>linguagem c desorganizada</b> que na qual eu tive de organizar para poder implementar a primeira fazer da analise sintática. <a href="https://github.com/RuiYuriAfricano/java-c-compiler/blob/main/docs/Gram%C3%A1ticaDesorganizada.docx"> Ver minha gramática desorganizada</a>.
+A analise sintática é a parte que segue depois que o compilador consegue ler os símbolos ela é responsável por validar se a escrita de um código está certa ou errada! Ela consegue fazer isso com base uma <b>Gramática Livre de Contexto</b> Tal como na língua portuguesa temos uma gramática que dita as regras também temos uma gramática em cada linguagem de programação que dita as regras de como se deve escrever o código para o meu caso de estudo eu utilizei uma gramática da <b>linguagem c desorganizada</b> que na qual eu tive de organizar para poder implementar a primeira fazer da analise sintática. <a href="https://github.com/RuiYuriAfricano/java-c-compiler/blob/main/docs/Gram%C3%A1ticaDesorganizada.docx"> Ver minha gramática desorganizada</a>.
 
 <h3>1.4.1 Gramática Livre de Contexto</h3>
 
