@@ -98,6 +98,7 @@ No processo de detenção de erro é preciso saber se o compilador pode entrar n
 
 Para o código:
 
+![Captura de Ecrã (581)](https://github.com/RuiYuriAfricano/java-c-compiler/assets/95936638/e621e365-958d-470f-beef-f52e27a01452)
 
 
 
