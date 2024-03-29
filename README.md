@@ -118,7 +118,6 @@ Existem ainda outras fases para a conclusão do trabalho de compilador que não 
 	2. Fazer instalação do Java no VSCode
 	3. Ou Fazer a instalação do NetBeans
 	4. Abrir o Projecto e Clicar Play, Pode fazer o download do projeto e rodar no apache netbeans, sem mistérios.
-<b>OBS:</b> O código pode ser inserido no ficheiro input.txt no diretório raiz.
 
 # Considerações Finais
 
@@ -126,4 +125,4 @@ Este foi um trabalho que amei enquanto estudante da cadeira de compiladores no <
 
 Obrigado!
 
-by: Rui Malemba
+By: Rui Malemba
