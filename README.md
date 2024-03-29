@@ -51,25 +51,25 @@ A análise léxica também conhecida como <b>Scanner</b> é quando o compilador 
 
 Aqui tem a saída do meu compilador para um analise léxica do código:
 
-#include <stdio.h>
-#include <stdlib.h>
-#define A 5
-/*
-Autor: Rui Malemba
-Data: 10/05/2023 
-*/
-int main(){
-	int a = 5;
-	int w[3]; //Declaração do vetor W
-	char letra = 'm';
-	scanf("%d", &c);
-	if(a == A)
-		printf("Olá");
-	media(11, 23.3, 'a', c);
-	gets(letra);
-	system("pause");
-	return 0;
-}
+#include <stdio.h><br/>
+#include <stdlib.h><br/>
+#define A 5<br/>
+/*<br/>
+Autor: Rui Malemba<br/>
+Data: 10/05/2023 <br/>
+*/<br/>
+int main(){<br/>
+	int a = 5;<br/>
+	int w[3]; //Declaração do vetor W<br/>
+	char letra = 'm';<br/>
+	scanf("%d", &c);<br/>
+	if(a == A)<br/>
+		printf("Olá");<br/>
+	media(11, 23.3, 'a', c);<br/>
+	gets(letra);<br/>
+	system("pause");<br/>
+	return 0;<br/>
+}<br/>
 ![Captura de Ecrã (576)](https://github.com/RuiYuriAfricano/java-c-compiler/assets/95936638/18c2b764-42f0-4d8f-8213-802c75121052)
 ![Captura de Ecrã (577)](https://github.com/RuiYuriAfricano/java-c-compiler/assets/95936638/5e81c84b-9b98-4061-a661-10187306f640)
 ![Captura de Ecrã (578)](https://github.com/RuiYuriAfricano/java-c-compiler/assets/95936638/8c7cf201-beb0-4254-9134-3dfd1d1290d5)
